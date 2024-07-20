@@ -69,7 +69,7 @@ const NavBar = () => {
                 <FaUserCircle />
               </button>
               {isProfileOpen && (
-                <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-20">
+                <div className="absolute right-0 mt-2 w-48 bg-wht rounded-md shadow-lg py-1 z-20">
                   <NavLink to="/profile" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
                     View Profile
                   </NavLink>
@@ -110,14 +110,14 @@ const NavBar = () => {
             My Job
           </NavLink>
           : null }
-          <NavLink to="/Salary" activeClassName="text-blue-400" className="flex items-center gap-2 text-2xl text-white" onClick={handleMenuToggler}>
+          <NavLink to="/Salary" activeClassName="text-blue-400" className="flex items-center gap-2 text-2xl text-wht" onClick={handleMenuToggler}>
             Salary
           </NavLink>
-          {isAuthroized &&user&&user.isRecruiter?<NavLink to="/postJobs" activeClassName="text-blue-400" className="text-white">
+          {isAuthroized &&user&&user.isRecruiter?<NavLink to="/postJobs" activeClassName="text-blue-400" className="text-wht">
             Post Jobs
           </NavLink>
           :null}
-          <NavLink to="/My-apply" activeClassName="text-blue-400" className="text-white">
+          <NavLink to="/My-apply" activeClassName="text-blue-400" className="text-wht">
            MyApply
           </NavLink>
           {/* <NavLink to="https://www.google.com/" activeClassName="text-blue-400" className="flex items-center gap-2 text-2xl text-white" onClick={handleMenuToggler}>
@@ -132,7 +132,7 @@ const NavBar = () => {
                 <FaUserCircle />
               </button>
               {isProfileOpen && (
-                <div className="flex flex-col p-4 bg-white text-gray-800 rounded-md shadow-lg">
+                <div className="flex flex-col p-4 bg-wht text-gray rounded-md shadow-lg">
                   <NavLink to="/profile" className="py-2" onClick={handleMenuToggler}>
                     View Profile
                   </NavLink>

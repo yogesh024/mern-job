@@ -31,7 +31,20 @@ const UserSchema = new mongoose.Schema({
   isRecruiter: {
     type: Boolean,
     default: false
-  }
+  },socialLinks: {
+    facebook: {
+      type: String,
+      default:"facebook link"
+    },
+    twitter: {
+      type: String,
+      default:"twitter link"
+    },
+    linkedin: {
+      type: String,
+     default:"linkedIN link"
+    }
+  },
 }, { timestamps: true });
 
 export default mongoose.model("User", UserSchema);

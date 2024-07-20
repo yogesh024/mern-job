@@ -72,7 +72,7 @@ export const MyApplication = () => {
   return (
     <section className="my_applications page">
       <div className="container">
-        <h1>{user && user.isRecruiter ? 'Applications From Job Seekers' : 'My Applications'}</h1>
+        <h1 className='text-3xl mb-4 text-custom-gray-dark'>{user && user.isRecruiter ? 'Applications From Job Seekers' : 'My Applications'}</h1>
         {apply.length === 0 ? (
           <h4>No Applications Found</h4>
         ) : (
